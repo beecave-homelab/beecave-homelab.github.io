@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects Directory</title>
+  <style>
+    .code {
+      display: none;
+    }
+  </style>
+  <script>
+    function toggleCode(elementId) {
+      const codeElement = document.getElementById(elementId);
+      codeElement.style.display = codeElement.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <h1>Projects Directory</h1>
+  <ul>
+    <li>
+      <a href="#" onclick="toggleCode('code1')">Project 1</a>
+      <pre id="code1" class="code">
+        <code>
+          // Code for Project 1
+        </code>
+      </pre>
+    </li>
+    <li>
+      <a href="#" onclick="toggleCode('code2')">Project 2</a>
+      <pre id="code2" class="code">
+        <code>
+          // Code for Project 2
+        </code>
+      </pre>
+    </li>
+    <!-- Add more projects as needed -->
+  </ul>
+</body>
+</html>
