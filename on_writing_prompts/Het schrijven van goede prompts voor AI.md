@@ -5,10 +5,9 @@ Een prompt is de input die je een AI-model geeft om een specifieke output te kri
 1. [Introductie](#introductie)
 2. [Wat is een Prompt?](#wat-is-een-prompt)
 3. [Hoe schrijf je een effectieve prompt?](#hoe-schrijf-je-een-effectieve-prompt)
-[Zelf een goede prompt schrijven (met hulp van AI)](#zelf-een-goede-prompt-schrijven-met-hulp-van-ai)
-4. [Waarom jij de belangrijkste factor bent bij het werken met AI](#waarom-jij-de-belangrijkste-factor-bent-bij-het-werken-met-ai)
-5. [Meer Informatie](#meer-informatie)
-
+4. [Zelf een goede prompt schrijven (met hulp van AI)](#zelf-een-goede-prompt-schrijven-met-hulp-van-ai)
+5. [Waarom jij de belangrijkste factor bent bij het werken met AI](#waarom-jij-de-belangrijkste-factor-bent-bij-het-werken-met-ai)
+6. [Meer Informatie](#meer-informatie)
 
 ## Introductie
 
