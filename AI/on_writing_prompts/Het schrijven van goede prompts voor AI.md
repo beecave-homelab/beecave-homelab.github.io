@@ -60,7 +60,7 @@ Deze prompt is te algemeen en leidt tot een breed, oppervlakkig antwoord.
 Schrijf een samenvatting van dit hoofdstuk.
 ```
 
-![simpele prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif)
+![simpele prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif?raw=true)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9f5b-686c-800b-a813-0423d44755de)
 
