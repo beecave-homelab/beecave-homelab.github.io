@@ -37,13 +37,9 @@ Net als bij het monteren van meubels helpt een goed gestructureerde prompt de AI
 ### Stappenplan
 
 - **Identificeer doel en context**: Bepaal wat je wilt bereiken met de AI-output en beschrijf de situatie waarin je het gaat gebruiken.
-
 - **Structureer je prompt**: Verdeel de prompt in logische onderdelen voor overzichtelijkheid, bijvoorbeeld met kopjes of nummering.
-
 - **Geef specifieke instructies**: Geef gedetailleerde instructies en voorbeelden om de AI te helpen je verwachtingen te begrijpen.
-
 - **Voorkom verwarring**: Zorg voor heldere taal en volg een logische volgorde om onduidelijkheid te vermijden.
-
 - **Controleer en valideer**: Controleer de output op juistheid en pas de prompt aan indien nodig.
 
 Met deze stappen creëer je een goed gestructureerde prompt, waardoor de AI je vraag beter begrijpt en relevantere output genereert.
