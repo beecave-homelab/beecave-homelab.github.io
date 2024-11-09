@@ -167,6 +167,17 @@
     </div>
 
     <script>
+        function slugify(text) {
+            return text
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+                .replace(/[^a-z0-9-\s]/g, '') // Remove special characters
+                .replace(/\s+/g, '-') // Replace spaces with hyphens
+                .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+                .trim(); // Remove trailing spaces
+        }
+
         async function loadMarkdownFile(filePath) {
             try {
                 const response = await fetch(filePath);
@@ -174,11 +185,53 @@
                 
                 // Parse markdown met CommonMark
                 const reader = new commonmark.Parser();
-                const writer = new commonmark.HtmlRenderer();
+                const writer = new commonmark.HtmlRenderer({safe: true});
+                
+                // Override de renderer voor headers
+                const oldRender = writer.render.bind(writer);
+                writer.render = function(parsed) {
+                    let walker = parsed.walker();
+                    let event;
+                    
+                    while ((event = walker.next())) {
+                        let node = event.node;
+                        if (event.entering && node.type === 'heading') {
+                            // Get the text content of the header
+                            let textContent = '';
+                            let child = node.firstChild;
+                            while (child) {
+                                if (child.type === 'text') {
+                                    textContent += child.literal;
+                                }
+                                child = child.next;
+                            }
+                            // Add id attribute to the node
+                            node.id = slugify(textContent);
+                        }
+                    }
+                    
+                    let html = oldRender(parsed);
+                    // Add id attributes to headers in HTML
+                    html = html.replace(/<(h[1-6])>/g, (match, p1) => {
+                        const text = match.replace(/<\/?[^>]+(>|$)/g, "");
+                        return `<${p1} id="${slugify(text)}">`;
+                    });
+                    
+                    return html;
+                };
+                
                 const parsed = reader.parse(markdownText);
                 const htmlContent = writer.render(parsed);
                 
                 document.getElementById('markdown-container').innerHTML = htmlContent;
+
+                // Scroll naar anchor als die aanwezig is in URL
+                if (window.location.hash) {
+                    const element = document.getElementById(window.location.hash.substring(1));
+                    if (element) {
+                        element.scrollIntoView();
+                    }
+                }
             } catch (error) {
                 console.error('Error loading markdown:', error);
                 document.getElementById('markdown-container').innerHTML = 
