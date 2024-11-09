@@ -3,7 +3,8 @@
 <head>
     <title>AI Resources</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://unpkg.com/remark@14.0.2/dist/remark.min.js"></script>
+    <script src="https://unpkg.com/remark-html@15.0.2/dist/remark-html.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -170,7 +171,12 @@
             try {
                 const response = await fetch(filePath);
                 const markdownText = await response.text();
-                const htmlContent = marked.parse(markdownText);
+                
+                // Gebruik remark voor parsing
+                const processor = remark().use(remarkHtml);
+                const file = await processor.process(markdownText);
+                const htmlContent = String(file);
+                
                 document.getElementById('markdown-container').innerHTML = htmlContent;
             } catch (error) {
                 console.error('Error loading markdown:', error);
