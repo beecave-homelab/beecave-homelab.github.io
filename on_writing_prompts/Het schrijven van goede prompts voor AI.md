@@ -20,7 +20,7 @@ Stel dat je een AI-model vraagt om een samenvatting van een boek over psychologi
 
 Hoewel AI krachtige output kan genereren, ben jij altijd de belangrijkste factor voor de kwaliteit van de resultaten. Bijvoorbeeld, stel dat je vraagt om een samenvatting van een wetenschappelijk artikel over klimaatverandering. Als je daarbij specifieke details toevoegt, zoals ‘focus op de belangrijkste conclusies over CO2-reductie en beperk het tot 150 woorden’, zal de AI een veel gerichtere en nuttigere output genereren. Dit laat zien hoe duidelijke, specifieke input de kwaliteit van de output direct kan beïnvloeden.
 
-• **Specifieke input, betere output**: Hoe gedetailleerder je instructies, hoe beter de AI kan presteren. Verwacht niet dat de AI altijd “snapt” wat je bedoelt; wees zo duidelijk mogelijk in wat je wilt.
+• **Precies in je input = betere output**: Hoe gedetailleerder je instructies, hoe beter de AI kan presteren. Verwacht niet dat de AI altijd “snapt” wat je bedoelt; wees zo duidelijk mogelijk in wat je wilt.
 
 • **Vertrouw niet blind op AI**: AI-systemen kunnen zogenaamde “hallucinaties” hebben, waarbij ze onjuiste of gefabriceerde informatie genereren. Jij bent altijd verantwoordelijk voor het controleren en valideren van de output.
 
@@ -55,7 +55,7 @@ Met deze stappen creëer je een goed gestructureerde prompt, waardoor de AI je v
 
 Hieronder zie je een voorbeeld van hoe je een prompt steeds specifieker kunt maken om tot betere resultaten te komen. 
 
-### 1. **Algemene prompt zonder specifieke instructies**
+### 1. Een simpele prompt zonder specifieke instructies
 
 Deze prompt is te algemeen en leidt tot een breed, oppervlakkig antwoord.
 
@@ -67,7 +67,7 @@ Schrijf een samenvatting van dit hoofdstuk.
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9f5b-686c-800b-a813-0423d44755de)
 
-### 2. **Specifiekere prompt met enige instructies**
+### 2. Een specifiekere prompt met enkele instructies
 
 Deze prompt bevat wat context, maar kan nog duidelijker.
 
@@ -79,7 +79,7 @@ Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9fb8-fd4c-800b-84f1-16f6defa7708)
 
-### 3. **Nog specifiekere en gedetailleerde prompt**
+### 3. Een nog specifiekere en gedetailleerde prompt
 
 Deze prompt bevat duidelijke instructies en context, wat resulteert in een output die voldoet aan de gestelde eisen.
 
