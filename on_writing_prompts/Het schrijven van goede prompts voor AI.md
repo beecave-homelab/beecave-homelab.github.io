@@ -20,11 +20,9 @@ Stel dat je een AI-model vraagt om een samenvatting van een boek over psychologi
 
 Hoewel AI krachtige output kan genereren, ben jij altijd de belangrijkste factor voor de kwaliteit van de resultaten. Bijvoorbeeld, stel dat je vraagt om een samenvatting van een wetenschappelijk artikel over klimaatverandering. Als je daarbij specifieke details toevoegt, zoals ‘focus op de belangrijkste conclusies over CO2-reductie en beperk het tot 150 woorden’, zal de AI een veel gerichtere en nuttigere output genereren. Dit laat zien hoe duidelijke, specifieke input de kwaliteit van de output direct kan beïnvloeden.
 
-• **Precies in je input = betere output**: Hoe gedetailleerder je instructies, hoe beter de AI kan presteren. Verwacht niet dat de AI altijd “snapt” wat je bedoelt; wees zo duidelijk mogelijk in wat je wilt.
-
-• **Vertrouw niet blind op AI**: AI-systemen kunnen zogenaamde “hallucinaties” hebben, waarbij ze onjuiste of gefabriceerde informatie genereren. Jij bent altijd verantwoordelijk voor het controleren en valideren van de output.
-
-• **AI als hulpmiddel, niet als vervanging**: AI kan je werk versnellen, vooral door grote hoeveelheden informatie te verwerken, maar vervangt geen inhoudelijke kennis. Menselijke expertise is nodig voor interpretatie en nuance. Hoe beter je zelf bekend bent met het onderwerp, hoe meer je uit AI kunt halen. Als je bijvoorbeeld een lesplan wilt maken, helpt het om zelf ervaring te hebben met lesontwerp en het onderwerp. Zonder die kennis kun je de output van de AI niet goed beoordelen.
+- **Precies in je input = betere output**: Hoe gedetailleerder je instructies, hoe beter de AI kan presteren. Verwacht niet dat de AI altijd “snapt” wat je bedoelt; wees zo duidelijk mogelijk in wat je wilt.
+- **Vertrouw niet blind op AI**: AI-systemen kunnen zogenaamde “hallucinaties” hebben, waarbij ze onjuiste of gefabriceerde informatie genereren. Jij bent altijd verantwoordelijk voor het controleren en valideren van de output.
+- **AI als hulpmiddel, niet als vervanging**: AI kan je werk versnellen, vooral door grote hoeveelheden informatie te verwerken, maar vervangt geen inhoudelijke kennis. Menselijke expertise is nodig voor interpretatie en nuance. Hoe beter je zelf bekend bent met het onderwerp, hoe meer je uit AI kunt halen. Als je bijvoorbeeld een lesplan wilt maken, helpt het om zelf ervaring te hebben met lesontwerp en het onderwerp. Zonder die kennis kun je de output van de AI niet goed beoordelen.
 
 
 ## Wat is een prompt?
@@ -40,13 +38,9 @@ Net als bij het monteren van meubels helpt een goed gestructureerde prompt de AI
 ### Stappenplan
 
 1. **Identificeer doel en context**: Bepaal wat je wilt bereiken met de AI-output en beschrijf de situatie waarin je het gaat gebruiken.
-
 2. **Structureer je prompt**: Verdeel de prompt in logische onderdelen voor overzichtelijkheid, bijvoorbeeld met kopjes of nummering.
-
 3. **Geef specifieke instructies**: Geef gedetailleerde instructies en voorbeelden om de AI te helpen je verwachtingen te begrijpen.
-
 4. **Voorkom verwarring**: Zorg voor heldere taal en volg een logische volgorde om onduidelijkheid te vermijden.
-
 5. **Controleer en valideer**: Controleer de output op juistheid en pas de prompt aan indien nodig.
 
 Met deze stappen creëer je een goed gestructureerde prompt, waardoor de AI je vraag beter begrijpt en relevantere output genereert.
@@ -121,17 +115,17 @@ Schrijf een samenvatting van deze hoofdstukken uit dit boek. Schrijf de samenvat
 
 ## Een geavanceerde en gestructureerde prompt schrijven (met hulp van AI)
 
-Met deze CustomGPT [Create Pattern](https://chatgpt.com/g/g-QkPXf5bV6-fabric-create-pattern) kun je gemakkelijk een geavanceerde prompt schrijven. Hergebruik de prompt uit stap 3 en zie hoe de tool je helpt met het schrijven van een geavanceerde prompt.
+Met deze AI-tool [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLDkr-prompting-create-pattern-nl) kun je gemakkelijk een geavanceerde prompt schrijven. Hergebruik de prompt uit stap 3 en zie hoe de tool je helpt met het schrijven van een geavanceerde prompt. Pas de output waar nodig aan en dat als een nieuwe prompt waarmee je een hele gerichte vraag kunt stellen aan AI.
 
-![geavanceerde prompt](images/geavanceerde-prompt.gif)
+![geavanceerde prompt](images/geavanceerde-prompt-nl.gif)
 
-[Bekijk de output van deze prompt](https://chatgpt.com/share/672fa006-0f24-800b-a57b-2fe84537b73f)
+[Bekijk de output van de prompt](https://chatgpt.com/share/672fc68c-8898-800b-a759-5522f8be2b54)
 
 
 ## Meer informatie
 
-• Meer over de aanpak van Fabric voor het schrijven van prompts: [Fabric | Our approach to prompting](https://github.com/danielmiessler/fabric/tree/main?tab=readme-ov-file#our-approach-to-prompting)
-• CustomGPT prompt-builder tool: [Fabric | Create Custom Pattern](https://chatgpt.com/g/g-QkPXf5bV6-fabric-create-pattern)
-• Voorbeeld van een effectieve prompt voor het samenvatten van een hoofdstuk uit een boek: [GitHub repo met custom-patterns](https://github.com/beecave-homelab/custom-patterns/blob/main/summarize_chapter/system.md)
+- Meer over de aanpak van Fabric voor het schrijven van prompts: [Fabric | Our approach to prompting](https://github.com/danielmiessler/fabric/tree/main?tab=readme-ov-file#our-approach-to-prompting)
+- CustomGPT prompt-builder tool: [Fabric | Create Custom Pattern](https://chatgpt.com/g/g-QkPXf5bV6-fabric-create-pattern)
+- Voorbeeld van een effectieve prompt voor het samenvatten van een hoofdstuk uit een boek: [GitHub repo met custom-patterns](https://github.com/beecave-homelab/custom-patterns/blob/main/summarize_chapter/system.md)
 
 ---
