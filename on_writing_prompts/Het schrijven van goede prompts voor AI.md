@@ -115,17 +115,18 @@ Schrijf een samenvatting van deze hoofdstukken uit dit boek. Schrijf de samenvat
 
 ## Een geavanceerde en gestructureerde prompt schrijven (met hulp van AI)
 
-Met deze AI-tool [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLDkr-prompting-create-pattern-nl) kun je gemakkelijk een geavanceerde prompt schrijven. Hergebruik de prompt uit stap 3 en zie hoe de tool je helpt met het schrijven van een geavanceerde prompt. Pas de output waar nodig aan en dat als een nieuwe prompt waarmee je een hele gerichte vraag kunt stellen aan AI.
+Met de AI-tool [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLDkr-prompting-create-pattern-nl) kun je eenvoudig een geavanceerde prompt opstellen. Hergebruik de prompt uit het vorige onderdeel en ontdek hoe de tool je ondersteunt bij het formuleren van een gedetailleerde prompt. Pas de output zo nodig aan en gebruik dit als een nieuwe prompt om een zeer gerichte vraag aan AI te stellen.
 
 ![geavanceerde prompt](images/geavanceerde-prompt-nl.gif)
 
 [Bekijk de output van de prompt](https://chatgpt.com/share/672fc68c-8898-800b-a759-5522f8be2b54)
 
-
 ## Meer informatie
 
 - Meer over de aanpak van Fabric voor het schrijven van prompts: [Fabric | Our approach to prompting](https://github.com/danielmiessler/fabric/tree/main?tab=readme-ov-file#our-approach-to-prompting)
-- CustomGPT prompt-builder tool: [Fabric | Create Custom Pattern](https://chatgpt.com/g/g-QkPXf5bV6-fabric-create-pattern)
+- Meer informatie over Markdown: [Markdown Guide](https://www.markdownguide.org/getting-started/)
+- CustomGPT prompt-builder tool (EN): [Fabric | Create Custom Pattern](https://chatgpt.com/g/g-QkPXf5bV6-fabric-create-pattern)
+- CustomGPT prompt-builder tool (NL): [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLDkr-prompting-create-pattern-nl)
 - Voorbeeld van een effectieve prompt voor het samenvatten van een hoofdstuk uit een boek: [GitHub repo met custom-patterns](https://github.com/beecave-homelab/custom-patterns/blob/main/summarize_chapter/system.md)
 
 ---
