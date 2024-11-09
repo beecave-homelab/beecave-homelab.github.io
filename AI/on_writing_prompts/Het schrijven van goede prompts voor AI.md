@@ -37,9 +37,13 @@ Net als bij het monteren van meubels helpt een goed gestructureerde prompt de AI
 ### Stappenplan
 
 1. **Identificeer doel en context**: Bepaal wat je wilt bereiken met de AI-output en beschrijf de situatie waarin je het gaat gebruiken.
+
 2. **Structureer je prompt**: Verdeel de prompt in logische onderdelen voor overzichtelijkheid, bijvoorbeeld met kopjes of nummering.
+
 3. **Geef specifieke instructies**: Geef gedetailleerde instructies en voorbeelden om de AI te helpen je verwachtingen te begrijpen.
+
 4. **Voorkom verwarring**: Zorg voor heldere taal en volg een logische volgorde om onduidelijkheid te vermijden.
+
 5. **Controleer en valideer**: Controleer de output op juistheid en pas de prompt aan indien nodig.
 
 Met deze stappen creëer je een goed gestructureerde prompt, waardoor de AI je vraag beter begrijpt en relevantere output genereert.
@@ -56,7 +60,7 @@ Deze prompt is te algemeen en leidt tot een breed, oppervlakkig antwoord.
 Schrijf een samenvatting van dit hoofdstuk.
 ```
 
-![simpele prompt](./images/simpele-prompt.gif)
+![simpele prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif?raw=true)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9f5b-686c-800b-a813-0423d44755de)
 
@@ -68,7 +72,7 @@ Deze prompt bevat wat context, maar kan nog duidelijker.
 Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. Zorg voor logische overgangen en vloeiende zinnen.
 ```
 
-![betere prompt](./images/betere-prompt.gif)
+![betere prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif?raw=true)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9fb8-fd4c-800b-84f1-16f6defa7708)
 
@@ -108,7 +112,7 @@ Schrijf een samenvatting van deze hoofdstukken uit dit boek. Schrijf de samenvat
 ```
 ````
 
-![gedetailleerde prompt](./images/gedetailleerde-prompt.gif)
+![gedetailleerde prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/gedetailleerde-prompt.gif?raw=true)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9fd1-3800-800b-8c20-25910e15cb02)
 
@@ -118,7 +122,7 @@ Met de AI-tool [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLD
 
 [Bekijk de output van de prompt](https://chatgpt.com/share/672fc68c-8898-800b-a759-5522f8be2b54)
 
-![geavanceerde prompt](./images/output-geavanceerde-prompt-nl.gif)
+![geavanceerde prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/geavanceerde-prompt-nl.gif?raw=true)
 
 [Bekijk de output van de prompt](https://chatgpt.com/share/672fd0f9-cf64-800b-8eea-c3e09374346f)
 
