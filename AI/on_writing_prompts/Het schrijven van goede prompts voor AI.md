@@ -70,7 +70,7 @@ Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands
 Zorg voor logische overgangen en vloeiende zinnen.
 ```
 
-![betere prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif?raw=true)
+![betere prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/betere-prompt.gif?raw=true)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9fb8-fd4c-800b-84f1-16f6defa7708)
 
