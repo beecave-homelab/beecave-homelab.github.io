@@ -65,7 +65,8 @@ Schrijf een samenvatting van dit hoofdstuk.
 Deze prompt bevat wat context, maar kan nog duidelijker.
 
 ```markdown
-Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
+Schrijf een samenvatting van dit hoofdstuk uit dit boek.
+Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
 Zorg voor logische overgangen en vloeiende zinnen.
 ```
 
