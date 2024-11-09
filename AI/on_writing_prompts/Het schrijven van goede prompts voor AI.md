@@ -24,7 +24,6 @@ Hoewel AI krachtige output kan genereren, ben jij altijd de belangrijkste factor
 - **Vertrouw niet blind op AI**: AI-systemen kunnen zogenaamde “hallucinaties” hebben, waarbij ze onjuiste of gefabriceerde informatie genereren. Jij bent altijd verantwoordelijk voor het controleren en valideren van de output.
 - **AI als hulpmiddel, niet als vervanging**: AI kan je werk versnellen, vooral door grote hoeveelheden informatie te verwerken, maar vervangt geen inhoudelijke kennis. Menselijke expertise is nodig voor interpretatie en nuance. Hoe beter je zelf bekend bent met het onderwerp, hoe meer je uit AI kunt halen. Als je bijvoorbeeld een lesplan wilt maken, helpt het om zelf ervaring te hebben met lesontwerp en het onderwerp. Zonder die kennis kun je de output van de AI niet goed beoordelen.
 
-
 ## Wat is een prompt?
 
 Een prompt is de instructie die je aan een AI-model geeft om een specifieke reactie of output te krijgen. Het kan variëren van een eenvoudige vraag tot een gedetailleerde opdracht. Hoe je een prompt formuleert, bepaalt de kwaliteit en relevantie van de AI-output. Een goed opgebouwde prompt helpt de AI om de context te begrijpen en zich af te stemmen op je verwachtingen.
@@ -57,7 +56,7 @@ Deze prompt is te algemeen en leidt tot een breed, oppervlakkig antwoord.
 Schrijf een samenvatting van dit hoofdstuk.
 ```
 
-![simpele prompt](images/simpele-prompt.gif)
+![simpele prompt](./images/simpele-prompt.gif)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9f5b-686c-800b-a813-0423d44755de)
 
@@ -69,7 +68,7 @@ Deze prompt bevat wat context, maar kan nog duidelijker.
 Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. Zorg voor logische overgangen en vloeiende zinnen.
 ```
 
-![betere prompt](images/betere-prompt.gif)
+![betere prompt](./images/betere-prompt.gif)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9fb8-fd4c-800b-84f1-16f6defa7708)
 
@@ -109,7 +108,7 @@ Schrijf een samenvatting van deze hoofdstukken uit dit boek. Schrijf de samenvat
 ```
 ````
 
-![gedetailleerde prompt](images/gedetailleerde-prompt.gif)
+![gedetailleerde prompt](./images/gedetailleerde-prompt.gif)
 
 [Bekijk de output van deze prompt](https://chatgpt.com/share/672f9fd1-3800-800b-8c20-25910e15cb02)
 
@@ -119,7 +118,7 @@ Met de AI-tool [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLD
 
 [Bekijk de output van de prompt](https://chatgpt.com/share/672fc68c-8898-800b-a759-5522f8be2b54)
 
-![geavanceerde prompt](images/output-geavanceerde-prompt-nl.gif)
+![geavanceerde prompt](./images/output-geavanceerde-prompt-nl.gif)
 
 [Bekijk de output van de prompt](https://chatgpt.com/share/672fd0f9-cf64-800b-8eea-c3e09374346f)
 
