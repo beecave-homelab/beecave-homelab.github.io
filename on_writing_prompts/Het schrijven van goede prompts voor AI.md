@@ -117,9 +117,12 @@ Schrijf een samenvatting van deze hoofdstukken uit dit boek. Schrijf de samenvat
 
 Met de AI-tool [Prompting | Create Pattern (NL)](https://chatgpt.com/g/g-VREBwLDkr-prompting-create-pattern-nl) kun je eenvoudig een geavanceerde prompt opstellen. Hergebruik de prompt uit het vorige onderdeel en ontdek hoe de tool je ondersteunt bij het formuleren van een gedetailleerde prompt. Pas de output zo nodig aan en gebruik dit als een nieuwe prompt om een zeer gerichte vraag aan AI te stellen.
 
-![geavanceerde prompt](images/geavanceerde-prompt-nl.gif)
-
 [Bekijk de output van de prompt](https://chatgpt.com/share/672fc68c-8898-800b-a759-5522f8be2b54)
+
+![geavanceerde prompt](images/output-geavanceerde-prompt-nl.gif)
+
+[Bekijk de output van de prompt](https://chatgpt.com/share/672fd0f9-cf64-800b-8eea-c3e09374346f)
+
 
 ## Meer informatie
 
