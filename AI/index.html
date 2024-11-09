@@ -3,8 +3,37 @@
 <head>
     <title>AI Resources</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/remark@14.0.2/dist/remark.min.js"></script>
-    <script src="https://unpkg.com/remark-html@15.0.2/dist/remark-html.min.js"></script>
+    <script type="module">
+        import { unified } from 'https://esm.sh/unified@10.1.2'
+        import remarkParse from 'https://esm.sh/remark-parse@10.0.2'
+        import remarkHtml from 'https://esm.sh/remark-html@15.0.2'
+
+        async function loadMarkdownFile(filePath) {
+            try {
+                const response = await fetch(filePath);
+                const markdownText = await response.text();
+                
+                // Gebruik unified/remark voor parsing
+                const file = await unified()
+                    .use(remarkParse)
+                    .use(remarkHtml)
+                    .process(markdownText);
+
+                const htmlContent = String(file);
+                document.getElementById('markdown-container').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                document.getElementById('markdown-container').innerHTML = 
+                    `<p>Error loading markdown: ${error.message}</p>`;
+            }
+        }
+
+        // Maak de functie globaal beschikbaar
+        window.loadMarkdownFile = loadMarkdownFile;
+
+        // Load the first markdown file when the page loads
+        loadMarkdownFile('on_writing_prompts/Het schrijven van goede prompts voor AI.md');
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -165,26 +194,5 @@
             <!-- Markdown content will be loaded here -->
         </div>
     </div>
-
-    <script>
-        async function loadMarkdownFile(filePath) {
-            try {
-                const response = await fetch(filePath);
-                const markdownText = await response.text();
-                
-                // Gebruik remark voor parsing
-                const processor = remark().use(remarkHtml);
-                const file = await processor.process(markdownText);
-                const htmlContent = String(file);
-                
-                document.getElementById('markdown-container').innerHTML = htmlContent;
-            } catch (error) {
-                console.error('Error loading markdown:', error);
-            }
-        }
-
-        // Load the first markdown file when the page loads
-        loadMarkdownFile('on_writing_prompts/Het schrijven van goede prompts voor AI.md');
-    </script>
 </body>
 </html>
