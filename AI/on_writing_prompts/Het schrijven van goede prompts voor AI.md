@@ -65,7 +65,8 @@ Schrijf een samenvatting van dit hoofdstuk.
 Deze prompt bevat wat context, maar kan nog duidelijker.
 
 ```markdown
-Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. Zorg voor logische overgangen en vloeiende zinnen.
+Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
+Zorg voor logische overgangen en vloeiende zinnen.
 ```
 
 ![betere prompt](https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif?raw=true)
@@ -77,7 +78,9 @@ Schrijf een samenvatting van dit hoofdstuk uit dit boek. Schrijf de samenvatting
 Deze prompt bevat duidelijke instructies en context, wat resulteert in een output die voldoet aan de gestelde eisen.
 
 ````markdown
-Schrijf een samenvatting van deze hoofdstukken uit dit boek. Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. De output volgt altijd het onderstaande format:
+Schrijf een samenvatting van dit hoofdstuk uit dit boek.
+Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
+De output volgt altijd het onderstaande format:
 
 # FORMAT
 ```
