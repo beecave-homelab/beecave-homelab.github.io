@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resources</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            width: 250px;
+            padding: 20px;
+        }
+        .markdown-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Articles</h2>
+            <ul>
+                <li><a href="#" onclick="loadMarkdownFile('on_writing_prompts/Het schrijven van goede prompts voor AI.md')">
+                    Het schrijven van goede prompts voor AI
+                </a></li>
+                <!-- Add more markdown files here as needed -->
+            </ul>
+        </div>
+        <div id="markdown-container" class="markdown-content">
+            <!-- Markdown content will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        async function loadMarkdownFile(filePath) {
+            try {
+                const response = await fetch(filePath);
+                const markdownText = await response.text();
+                const htmlContent = marked.parse(markdownText);
+                document.getElementById('markdown-container').innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+            }
+        }
+
+        // Load the first markdown file when the page loads
+        loadMarkdownFile('on_writing_prompts/Het schrijven van goede prompts voor AI.md');
+    </script>
+</body>
+</html>
