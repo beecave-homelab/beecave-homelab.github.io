@@ -65,7 +65,7 @@ Schrijf een samenvatting van dit hoofdstuk.
 Deze prompt bevat wat context, maar kan nog duidelijker.
 
 ```markdown
-Schrijf een samenvatting van dit hoofdstuk uit dit boek.
+Schrijf een samenvatting van deze tekst.
 Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
 Zorg voor logische overgangen en vloeiende zinnen.
 ```
@@ -79,7 +79,7 @@ Zorg voor logische overgangen en vloeiende zinnen.
 Deze prompt bevat duidelijke instructies en context, wat resulteert in een output die voldoet aan de gestelde eisen.
 
 ````markdown
-Schrijf een samenvatting van dit hoofdstuk uit dit boek.
+Schrijf een samenvatting van deze tekst.
 Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
 De output volgt altijd het onderstaande format:
 
@@ -97,7 +97,7 @@ De output volgt altijd het onderstaande format:
 
 ### De belangrijkste punten
 
-{Schrijf alle belangrijke punten paragrafen waar het hoofdstuk over gaat}
+{Schrijf alle belangrijke punten op die voorkomen in het hoofdstuk}
 
 - **{belangrijk punt}**: {Schrijf een korte samenvatting van het belangrijkste punt}
 - etc.
