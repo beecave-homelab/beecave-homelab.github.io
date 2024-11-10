@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het schrijven van goede prompts voor AI</title>
+    <style>
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --accent: #3291ff;
+            --code-bg: #2a2a2a;
+            --border-color: #404040;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            overflow-y: auto;
+        }
+
+        main {
+            margin-left: 300px;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+        }
+
+        p {
+            margin: 1rem 0;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        pre {
+            background: var(--code-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0.5rem 0;
+        }
+
+        .nav-list a {
+            color: var(--text-secondary);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .prompt-example {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .format-block {
+            background: var(--code-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border-color);
+            white-space: pre-wrap;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#introductie">Introductie</a></li>
+            <li><a href="#waarom-jij">Waarom jij de belangrijkste factor bent</a></li>
+            <li><a href="#wat-is-prompt">Wat is een prompt?</a></li>
+            <li><a href="#effectieve-prompt">Hoe schrijf je een effectieve prompt?</a></li>
+            <li><a href="#zelf-schrijven">Zelf een goede prompt schrijven</a></li>
+            <li><a href="#geavanceerd">Geavanceerde prompts</a></li>
+            <li><a href="#meer-info">Meer informatie</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Het schrijven van goede prompts voor AI</h1>
+        <p>Een prompt is de input die je een AI-model geeft om een specifieke output te krijgen. Het effectief formuleren van een prompt is cruciaal voor het krijgen van relevante en betrouwbare resultaten.</p>
+
+        <h2>Inhoudopgave</h2>
+        <ol>
+            <li><a href="#introductie">Introductie</a></li>
+            <li><a href="#waarom-jij">Waarom jij de belangrijkste factor bent bij het werken met AI</a></li>
+            <li><a href="#wat-is-prompt">Wat is een prompt?</a></li>
+            <li><a href="#effectieve-prompt">Hoe schrijf je een effectieve prompt?</a></li>
+            <li><a href="#zelf-schrijven">Zelf een goede prompt schrijven</a></li>
+            <li><a href="#geavanceerd">Een geavanceerde en gestructureerde prompt schrijven</a></li>
+            <li><a href="#meer-info">Meer informatie</a></li>
+        </ol>
+
+        <h2 id="introductie">Introductie</h2>
+        <p>Stel dat je een AI-model vraagt om een samenvatting van een boek over psychologie. Je verwacht misschien dat het antwoord precies aansluit bij wat je in gedachten had. Vaak zul je echter merken dat een te brede of vage prompt kan resulteren in een lange, generieke beschrijving zonder diepgang. Door specifieke details en een duidelijke structuur toe te voegen, kun je de kwaliteit van de output aanzienlijk verbeteren.</p>
+
+        <h2 id="waarom-jij">Waarom jij de belangrijkste factor bent bij het werken met AI</h2>
+        <p>Hoewel AI krachtige output kan genereren, ben jij altijd de belangrijkste factor voor de kwaliteit van de resultaten. Bijvoorbeeld, stel dat je vraagt om een samenvatting van een wetenschappelijk artikel over klimaatverandering. Als je daarbij specifieke details toevoegt, zoals 'focus op de belangrijkste conclusies over CO2-reductie en beperk het tot 150 woorden', zal de AI een veel gerichtere en nuttigere output genereren. Dit laat zien hoe duidelijke, specifieke input de kwaliteit van de output direct kan beïnvloeden.</p>
+
+        <ul>
+            <li><strong>Precies in je input = betere output</strong>: Hoe gedetailleerder je instructies, hoe beter de AI kan presteren. Verwacht niet dat de AI altijd "snapt" wat je bedoelt; wees zo duidelijk mogelijk in wat je wilt.</li>
+            <li><strong>Vertrouw niet blind op AI</strong>: AI-systemen kunnen zogenaamde "hallucinaties" hebben, waarbij ze onjuiste of gefabriceerde informatie genereren. Jij bent altijd verantwoordelijk voor het controleren en valideren van de output.</li>
+            <li><strong>AI als hulpmiddel, niet als vervanging</strong>: AI kan je werk versnellen, vooral door grote hoeveelheden informatie te verwerken, maar vervangt geen inhoudelijke kennis. Menselijke expertise is nodig voor interpretatie en nuance. Hoe beter je zelf bekend bent met het onderwerp, hoe meer je uit AI kunt halen. Als je bijvoorbeeld een lesplan wilt maken, helpt het om zelf ervaring te hebben met lesontwerp en het onderwerp. Zonder die kennis kun je de output van de AI niet goed beoordelen.</li>
+        </ul>
+
+        <h2 id="wat-is-prompt">Wat is een prompt?</h2>
+        <p>Een prompt is de instructie die je aan een AI-model geeft om een specifieke reactie of output te krijgen. Het kan variëren van een eenvoudige vraag tot een gedetailleerde opdracht. Hoe je een prompt formuleert, bepaalt de kwaliteit en relevantie van de AI-output. Een goed opgebouwde prompt helpt de AI om de context te begrijpen en zich af te stemmen op je verwachtingen.</p>
+
+        <h2 id="effectieve-prompt">Hoe schrijf je een effectieve prompt?</h2>
+        <p>Stel je voor dat je een meubelstuk wilt monteren zonder handleiding. Je hebt alle onderdelen en gereedschappen, maar zonder duidelijke stappen is het eindresultaat onzeker – mogelijk eindig je met losse schroeven of een wiebelend meubelstuk. Een gedetailleerd stappenplan maakt het daarentegen eenvoudig: je volgt de instructies en weet precies hoe elk onderdeel op zijn plaats valt.</p>
+
+        <p>Net als bij het monteren van meubels helpt een goed gestructureerde prompt de AI om jouw vraag nauwkeurig en relevant te beantwoorden. Dit hoofdstuk biedt een stapsgewijze aanpak voor het schrijven van effectieve prompts, zodat je met vertrouwen kunt rekenen op output die aansluit bij je verwachtingen.</p>
+
+        <h3>Stappenplan</h3>
+        <ul>
+            <li><strong>Identificeer doel en context</strong>: Bepaal wat je wilt bereiken met de AI-output en beschrijf de situatie waarin je het gaat gebruiken.</li>
+            <li><strong>Structureer je prompt</strong>: Verdeel de prompt in logische onderdelen voor overzichtelijkheid, bijvoorbeeld met kopjes of nummering.</li>
+            <li><strong>Geef specifieke instructies</strong>: Geef gedetailleerde instructies en voorbeelden om de AI te helpen je verwachtingen te begrijpen.</li>
+            <li><strong>Voorkom verwarring</strong>: Zorg voor heldere taal en volg een logische volgorde om onduidelijkheid te vermijden.</li>
+            <li><strong>Controleer en valideer</strong>: Controleer de output op juistheid en pas de prompt aan indien nodig.</li>
+        </ul>
+
+        <h2 id="zelf-schrijven">Zelf een goede prompt schrijven</h2>
+        <p>Hieronder zie je een voorbeeld van hoe je een prompt steeds specifieker kunt maken om tot betere resultaten te komen.</p>
+
+        <h3>1. Een simpele prompt zonder specifieke instructies</h3>
+        <p>Deze prompt is te algemeen en leidt tot een breed, oppervlakkig antwoord.</p>
+        <div class="prompt-example">
+            <code>Schrijf een samenvatting van dit hoofdstuk.</code>
+        </div>
+        <img src="https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/simpele-prompt.gif?raw=true" alt="Simpele prompt voorbeeld">
+        <p><a href="https://chatgpt.com/share/672f9f5b-686c-800b-a813-0423d44755de">Bekijk de output van deze prompt</a></p>
+
+        <h3>2. Een specifiekere prompt met enkele instructies</h3>
+        <p>Deze prompt bevat wat context, maar kan nog duidelijker.</p>
+        <div class="prompt-example">
+            <code>Schrijf een samenvatting van deze tekst.
+Schrijf de samenvatting volgens een vast format en altijd in vloeiend Nederlands. 
+Zorg voor logische overgangen en vloeiende zinnen.</code>
+        </div>
+        <img src="https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/betere-prompt.gif?raw=true" alt="Betere prompt voorbeeld">
+        <p><a href="https://chatgpt.com/share/672f9fb8-fd4c-800b-84f1-16f6defa7708">Bekijk de output van deze prompt</a></p>
+
+        <h3>3. Een nog specifiekere en gedetailleerde prompt</h3>
+        <p>Deze prompt bevat duidelijke instructies en context, wat resulteert in een output die voldoet aan de gestelde eisen.</p>
+        <div class="format-block">
+# FORMAT
+```
+# {De titel van het hoofdstuk}
+
+## In een zin samengevat
+
+{Schrijf een samenvatting van het hoofdstuk in maximaal 30 woorden} 
+
+## Onderwerp
+
+{Schrijf in twee paragrafen waar het hoofdstuk over gaat}
+
+### De belangrijkste punten
+
+{Schrijf alle belangrijke punten op die voorkomen in het hoofdstuk}
+
+- **{belangrijk punt}**: {Schrijf een korte samenvatting van het belangrijkste punt}
+- etc.
+
+## Conclusie
+
+{Schrijf in twee paragrafen de conclusie en aanbevelingen uit het hoofdstuk}
+
+## Keywords and tags
+
+#example-tag #example-key-word
+```</div>
+        <img src="https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_prompts/images/gedetailleerde-prompt.gif?raw=true" alt="Gedetailleerde prompt voorbeeld">
+        <p><a href="https://chatgpt.com/share/672f9fd1-3800-800b-8c20-25910e15cb02">Bekijk de output van deze prompt</a></p>
+
+        <h2 id="geavanceerd">Een geavanceerde en gestructureerde prompt schrijven (met hulp van AI)</h2>
+        <p>Met de AI-tool <a href="https://chatgpt.com/g/g-VREBwLDkr-prompting-create-pattern-nl">Prompting | Create Pattern (NL)</a> kun je eenvoudig een geavanceerde prompt opstellen. Hergebruik de prompt uit het vorige onderdeel en ontdek hoe de tool je ondersteunt bij het formuleren van een gedetailleerde prompt. Pas de output zo nodig aan en gebruik dit als een nieuwe prompt om een zeer gerichte vraag aan AI te stellen.</p>
+
+        <img src="https://github.com/beecave-homelab/beecave-homelab.github.io/blob/main/AI/on_writing_
